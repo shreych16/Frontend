@@ -1,0 +1,25 @@
+task-1 :- html/css pricing webpage is present in task-1.html file.
+
+task-2 :- I create react app which contains feactures of show products, add product, edit product, LeftPanel for data filteration and single product page.
+
+im also deployed this application on firebase for easily access the application.
+deployed link:- https://frontend-4bf06.web.app
+and its database or its backend server is build on node.js with express.js and postger sql database.
+database is also deployed on render 
+database link:- https://database-c772.onrender.com
+
+because datebase is deplyed so it will take few seconds in first time.
+so please the refresh the page.
+
+Note:- if some issue app deployed link in not running then please follow some steps
+1. open app folder in terminal 
+2. then run command :- npm start
+    for starting front end
+
+if database is not working then follow some steps
+1. open database folder in app folder in terminal
+2. then run command :- node serverFile.js
+   for running server by using this step must check serverFile.js in database folder in app folder
+   and uncomment const baseURL = "http://localhost:2410"; and comment out the other one.
+
+Question task:- is present in Question.txt file

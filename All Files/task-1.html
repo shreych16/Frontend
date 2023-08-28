@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/edd3c41621.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .hover {
+    border: 5px solid;
+    /* border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8; */
+    -webkit-mask: 
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+  .hover:hover {
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }
+ 
+  h3 {
+    font-family: system-ui, sans-serif;
+    font-size: 4rem;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+  }
+
+  .navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#a{
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #9a3c95, #e59833);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-shadow: 0px 0px 5px #b393d3; */
+}
+    </style>
+</head>
+<body class="container-fluid" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <header>
+        <header class="navbar navbar-expand-md navbar-light bg-light mb-5 bd-navbar sticky-top">
+          <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
+              <b>United UI</b>
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+        </svg>
+        
+            </button>
+
+            <div class="collapse navbar-collapse" id="bdNavbar">
+              <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 me-auto mb-2 mb-lg-0"> 
+                <li class="nav-item col-6 col-md-auto">
+                  <a class="nav-link p-2 active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown col-6 col-md-auto">
+                    <a class="nav-link dropdown-toggle  ]p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown col-6 col-md-auto">
+                    <a class="nav-link dropdown-toggle p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <a class="nav-link p-2" aria-current="true" href="#">Pricing</a>
+                  </li>
+              </ul>
+        
+              <hr class="d-md-none text-white-50">
+              <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </header>
+      
+      <div class="container">
+        <h5 class="fw-bold" style="color: rgb(72, 36, 217);">Pricing</h5>
+        <h1 class="fw-bold">Simple, transparent pricing</h1>
+        <h6 class="text-muted">We believe United should be accessible to all the companies, no matter the size.</h6>
+        <div class="row">
+            <div class="card m-4 col-3 hover" style="border-color: rgb(55, 24, 179);">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold text-center">$10/mth</h2>
+                  <h6 class="text-center">Basic plan</h6>
+                  <p class="text-center">Billed annually</p>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Access to all basic features</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Basic repository and analytics</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Up to 10 individual users</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  20GB individual data each user</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Basic chat and email support</span><br><br>
+                  <a href="#" class="btn text-white" style="background-color: rgb(55, 24, 179);">Get Selected</a>
+                </div>
+              </div>
+              <div class="card m-4 col-3 hover" style="border-color: rgb(55, 24, 179);">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold text-center">$20/mth</h2>
+                  <h6 class="text-center">Business plan</h6>
+                  <p class="text-center">Billed annually</p>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  200+ integration</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Advanced reporting and analytics</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Up to 20 individual users</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  40GB individual data each user</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Priotity chat and email support</span><br><br>
+                  <a href="#" class="btn text-white" style="background-color: rgb(55, 24, 179);">Get Selected</a>
+                </div>
+              </div>
+              <div class="card m-4 col-3 hover" style="border-color: rgb(55, 24, 179);">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold text-center">$40/mth</h2>
+                  <h6 class="text-center">Enterprise plan</h6>
+                  <p class="text-center">Billed annually</p>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Advanced custom fields</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Audit log and data history</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Unlimited individual users</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Unlimited individual data</span><br>
+                  <span class="card-text"><i class="fa-regular fa-circle-check fa-fade" style="color: #3718b3;"></i>  Personalised+priotity services</span><br><br>
+                  <a href="#" class="btn text-white" style="background-color: rgb(55, 24, 179);">Get Selected</a>
+                </div>
+              </div>
+          </div>
+
+      </div>
+      <footer class="text-center text-lg-start bg-light">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>United UI
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Product 1</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Product 2</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Product 3</a>
+                </p>
+                
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Products</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">About Us</a>
+                </p>
+                
+              </div>
+             
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> United UI, india</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  United UI@gmail.com
+                </p>
+                
+              </div>
+             
+            </div>
+           
+          </div>
+        </section>
+       
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="#">United UI.com</a>
+        </div>
+       
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      
+</body>
+</html>
